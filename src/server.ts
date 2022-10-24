@@ -6,6 +6,8 @@ import { logInfo } from './utils/log';
 dotenv.config();
 const app = express();
 
+app.use(express.json());
+
 app.get('/', (_req, res) => {
 	res.send('Hello World');
 });
